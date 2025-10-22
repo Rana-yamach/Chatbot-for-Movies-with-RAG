@@ -332,7 +332,6 @@ except Exception as e:
 
 """## **Define Gradio Chat Function**"""
 
-print("\n--- Step 8: Defining Gradio Chat Function ---")
 def chat_interface_function(message, history):
     if not message or not message.strip(): return "Please enter a question about movies."
     if not rag_chain: return "Sorry, the RAG chain is not available due to an earlier setup error."
@@ -355,7 +354,6 @@ def chat_interface_function(message, history):
 
 """## **Launch Gradio Interface**"""
 
-print("\n--- Step 9: Launching Gradio Interface ---")
 try:
     demo = gr.ChatInterface(
         fn=chat_interface_function,
