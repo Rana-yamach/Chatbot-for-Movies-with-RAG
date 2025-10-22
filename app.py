@@ -213,7 +213,7 @@ try:
     if llm is None:
         raise ValueError("LLM initialization failed in Step 7.") # Raise specific error
 
-    # 3. Define a formatting function for the context (UPDATED)
+    # 3. Define a formatting function for the context
     def format_docs(docs):
         if not docs:
             return "No relevant context found."
@@ -227,7 +227,7 @@ try:
             for doc in docs
         )
 
-    # 4. Create the Prompt Template for the RAG chain (UPDATED)
+    # 4. Create the Prompt Template for the RAG chain
     qa_system_prompt = """You are a helpful and enthusiastic movie expert.
 Carefully read the user's latest question ({question}) and the potentially reformulated standalone question based on chat history.
 Your primary goal is to answer the question based *only* on the context provided between <context> tags.
