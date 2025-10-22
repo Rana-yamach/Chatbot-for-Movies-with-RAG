@@ -52,7 +52,7 @@ To run this project locally, follow these steps.
 
 
 ```
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+git clone https://github.com/Rana-yamach/Chatbot-for-Movies-with-RAG
 cd your-repo-name
 ```
 
