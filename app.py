@@ -18,10 +18,6 @@ It follows the principles from your provided notebooks:
 3. Uses the "`Pablinho/movies-dataset`" as the data source.
 4. Uses `Google's Gemini API`: `gemini-2.0-flash` as the LLM.
 
-To run this in Colab:
-1. It will prompt you for your Google API Key.
-2. A Gradio link will appear; click it to open the chat interface.
-
 ## **Install necessary libraries**
 
 We install all the required packages for data loading, LangChain,vector stores, embeddings, the Google LLM, and the Gradio UI.
